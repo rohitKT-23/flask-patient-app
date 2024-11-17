@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Failure Prediction</title>
+</head>
+<body>
+    <h1>Heart Failure Prediction</h1>
+    <form action="/predict" method="post">
+        <label>Age: </label>
+        <input type="number" name="age" step="any" required><br><br>
+        <label>Ejection Fraction: </label>
+        <input type="number" name="ejection_fraction" step="any" required><br><br>
+        <label>Time (Days): </label>
+        <input type="number" name="time" step="any" required><br><br>
+        <label>Anaemia (1=Yes, 0=No): </label>
+        <input type="number" name="anaemia" min="0" max="1" required><br><br>
+        <label>Diabetes (1=Yes, 0=No): </label>
+        <input type="number" name="diabetes" min="0" max="1" required><br><br>
+        <label>High Blood Pressure (1=Yes, 0=No): </label>
+        <input type="number" name="high_blood_pressure" min="0" max="1" required><br><br>
+        <label>Sex (1=Male, 0=Female): </label>
+        <input type="number" name="sex" min="0" max="1" required><br><br>
+        <label>Smoking (1=Yes, 0=No): </label>
+        <input type="number" name="smoking" min="0" max="1" required><br><br>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
